@@ -79,6 +79,7 @@ formDOM.addEventListener('submit', async (e) => {
   } catch (error) {
     formAlertDOM.style.display = 'block'
     formAlertDOM.innerHTML = `error, please try again`
+    console.log(error)
   }
   setTimeout(() => {
     formAlertDOM.style.display = 'none'
